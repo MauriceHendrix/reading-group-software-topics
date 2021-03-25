@@ -11,7 +11,7 @@ keypoints:
 ---
 ## Readable functions
 
-Consider these two functions:
+Consider the following function:
 
 ~~~
 def s(p):
@@ -21,9 +21,14 @@ def s(p):
     m = a / len(p)
     d = 0
     for v in p:
-        d += (v - m) * (v - m)
+        d += (v - m)**2
     return numpy.sqrt(d / (len(p) - 1))
+~~~
+{: .language-python}
 
+What does this function do? How about the following function?
+
+~~~
 def std_dev(sample):
     sample_sum = 0
     for value in sample:
@@ -33,25 +38,32 @@ def std_dev(sample):
 
     sum_squared_devs = 0
     for value in sample:
-        sum_squared_devs += (value - sample_mean) * (value - sample_mean)
+        sum_squared_devs += (value - sample_mean)**2
 
     return numpy.sqrt(sum_squared_devs / (len(sample) - 1))
 ~~~
 {: .language-python}
 
-The functions `s` and `std_dev` are computationally equivalent (they
-both calculate the sample standard deviation), but to a human reader,
-they look very different. You probably found `std_dev` much easier to
-read and understand than `s`.
+If we use list comprehensions and/or maps and the built-in sum function
+~~~
+def std_dev(sample):
+    sample_mean = sum(sample) / len(sample)
 
-As this example illustrates, both documentation and a programmer's
-_coding style_ combine to determine how easy it is for others to read
-and understand the programmer's code. Choosing meaningful variable
-names and using blank spaces to break the code into logical "chunks"
-are helpful techniques for producing _readable code_. This is useful
-not only for sharing code with others, but also for the original
-programmer. If you need to revisit code that you wrote months ago and
-haven't thought about since then, you will appreciate the value of
-readable code!
+    #sum_squared_devs = sum([(value - sample_mean)**2 for value in sample])
+    sum_squared_devs = sum(map(lambda value: (value - sample_mean)**2, sample))
+
+    return sqrt(sum_squared_devs / (len(sample) - 1))
+~~~
+{: .language-python}
+
+We could do all this in one line, but is that a good idea?
+
+~~~
+def std_dev(sample):
+    return sqrt(sum([(value - (sum(sample) / len(sample)))**2 for value in sample]))
+~~~
+{: .language-python}
+
+
 
 {% include links.md %}
