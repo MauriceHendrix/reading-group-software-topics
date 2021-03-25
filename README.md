@@ -28,7 +28,6 @@ This lesson is also available in [R][R] and [MATLAB][MATLAB].
 
 | # |  Episode | Time | Question(s) |
 |--:|:---------|:----:|:------------|
-| 1 | [Python Fundamentals][episode01] | 30 | What basic data types can I work with in Python?<br>How can I create a new variable in Python?<br>Can I change the value associated with a variable after I create it? |
 | 2 | [Analyzing Patient Data][episode02] | 60 | How can I process tabular data files in Python? |
 | 3 | [Visualizing Tabular Data][episode03] | 50 | How can I visualize tabular data in Python?<br>How can I group several plots together? |
 | 4 | [Repeating Actions with Loops][episode04] | 30 | How can I do the same operations on many different values? |
