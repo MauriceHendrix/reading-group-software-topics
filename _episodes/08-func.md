@@ -28,6 +28,9 @@ def s(p):
 
 What does this function do? How about the following function?
 
+
+
+
 ~~~
 def std_dev(sample):
     sample_sum = 0
