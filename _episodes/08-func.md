@@ -65,6 +65,10 @@ We could do all this in one line, but is that a good idea?
 def std_dev(sample):
     return sqrt(sum([(value - (sum(sample) / len(sample)))**2 for value in sample]))
 ~~~
+
+Since it's now a 1 liner you migh be tempted to use that one liner instead in code. Why is that a bad idea?
+
+
 {: .language-python}
 
 
