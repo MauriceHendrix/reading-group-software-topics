@@ -1,5 +1,5 @@
 ---
-title: Creating Functions
+title: Readable code
 teaching: 5
 exercises: 0
 questions:
