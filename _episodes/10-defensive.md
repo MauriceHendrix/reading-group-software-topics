@@ -1,7 +1,7 @@
 ---
 title: Defensive Programming
-teaching: 30
-exercises: 10
+teaching: 25
+exercises: 0
 questions:
 - "How can I make my programs more reliable?"
 objectives:
