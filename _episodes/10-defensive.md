@@ -366,6 +366,15 @@ chaste_normal_models = ...
 def test_Normal(model):
    ...
 
+- you can deliberately cause an error and check you get the expected error:
+~~~
+import pytest
+def test_something():
+with pytest.raises(ValueError, match='Equation LHS should be a derivative or variable'):
+   ...
+~~~
+{: .language-python}
+
 ### Coverage
 Code coverage is an interesting metric. Itindicated how much of the code is being run during the tests and generally gives a good indication of how complete the tests are. However it's worth keeping in mind that it's not a perfect measure.
 To use it:
