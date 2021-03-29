@@ -359,12 +359,14 @@ def test_partial_eval(hh_model):
 {: .language-python}
 
 - parameterisation allows running the same test on multiple inputs e.g.
-
+~~~
 chaste_normal_models = ...
 
 @pytest.mark.parametrize(('model'), chaste_normal_models)
 def test_Normal(model):
    ...
+~~~
+{: .language-python}
 
 - you can deliberately cause an error and check you get the expected error:
 ~~~
