@@ -30,7 +30,7 @@ def W(p):
     d = 0
     for v in p:
         d += (v - m)**2
-    return numpy.sqrt(d / (len(p) - 1))
+    return sqrt(d / (len(p) - 1))
 ~~~
 {: .language-python}
 
@@ -48,7 +48,7 @@ def std_dev(sample):
     for value in sample:
         sum_squared_devs += (value - sample_mean)**2
 
-    return numpy.sqrt(sum_squared_devs / (len(sample) - 1))
+    return sqrt(sum_squared_devs / (len(sample) - 1))
 ~~~
 {: .language-python}
 
