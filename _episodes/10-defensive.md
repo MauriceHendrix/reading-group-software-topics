@@ -368,6 +368,7 @@ def test_Normal(model):
 ~~~
 {: .language-python}
 
+
 - you can deliberately cause an error and check you get the expected error:
 ~~~
 import pytest
