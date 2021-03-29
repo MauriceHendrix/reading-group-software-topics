@@ -13,7 +13,6 @@ keypoints:
 - "Make it fail fast."
 - "Change one thing at a time, and for a reason."
 - "Keep track of what you've done."
-- "Be humble."
 ---
 
 Once testing has uncovered problems,
