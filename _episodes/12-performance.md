@@ -28,7 +28,7 @@ In a practical sense this means we measure the amount of operations as follows:
 
 *Example: Given list a list lst check that for every negative value it's square is also in the list*
 
-* What is the big O of this implemntation?*
+* What is the big O of this implemntation? *
 
 ~~~
 def square_of_negative_in_list(lst):
