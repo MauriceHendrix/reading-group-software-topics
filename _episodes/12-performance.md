@@ -45,7 +45,7 @@ def square_of_negative_in_list(lst):
 {: .language-python}
 
 
-* What is the big O of this implemntation?*
+* What is the big O of this implemntation? *
 ~~~
 def square_of_negative_in_list2(lst):
     found_squares = set()
