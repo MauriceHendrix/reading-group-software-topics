@@ -26,9 +26,9 @@ In a practical sense this means we measure the amount of operations as follows:
 - An algorithm that slits a list in 2 every step: O(log(N))
 - Worst case: exponential O(c^N). E.g. plan the most efficient way for a traveling salesman. No other way than trying allpossible routes (though there are approximations)
 
-*Example: Given list a list lst check that for every negative value it's square is also in the list*
+**Example: Given list a list lst check that for every negative value it's square is also in the list**
 
-** What is the big O of this implemntation? **
+### What is the big O of this implemntation?
 
 ~~~
 def square_of_negative_in_list(lst):
@@ -45,7 +45,7 @@ def square_of_negative_in_list(lst):
 {: .language-python}
 
 
-** What is the big O of this implemntation? **
+### What is the big O of this implemntation?
 ~~~
 def square_of_negative_in_list2(lst):
     found_squares = set()
@@ -60,7 +60,7 @@ def square_of_negative_in_list2(lst):
 {: .language-python}
 
 
-** Top tips **
+## Top tips
 
 - Reduce work inside loops, list-, dicst-comprehensions etc.
 - Especially avoid nested loops whenever possible, it can be worth going through a list multiple times just to avoid nesting!
