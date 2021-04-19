@@ -28,7 +28,7 @@ In a practical sense this means we measure the amount of operations as follows:
 
 **Example: Given list a list lst check that for every negative value it's square is also in the list**
 
-### What is the big O of this implemntation?
+### What is the big O of this implementation?
 
 ~~~
 def square_of_negative_in_list(lst):
@@ -45,7 +45,7 @@ def square_of_negative_in_list(lst):
 {: .language-python}
 
 
-### What is the big O of this implemntation?
+### What is the big O of this implemnetation?
 ~~~
 def square_of_negative_in_list2(lst):
     found_squares = set()
@@ -67,7 +67,7 @@ def square_of_negative_in_list2(lst):
 - Sometimes sorting can be worth it if you can void nesting loops that way (best sorting algo is O(N log N).
 
 ## Testing software performance
-Let's test these different implemntations. The easiest way is to run them on some (the same) sample data and time & compare.
+Let's test these different implementations. The easiest way is to run them on some (the same) sample data and time & compare.
 
 ~~~
 import time
@@ -115,7 +115,7 @@ for v in tuple(list1):
 {: .language-python}
 
 * Finally *
-If there is a built-in python method you should probably use it as it's probably probably faster than what you can write. It may even have an underlying C implemntation. Many methods allow you flexibility e.g. sorting methods allow you to specify what to sort on. e.g.
+If there is a built-in python method you should probably use it as it's probably probably faster than what you can write. It may even have an underlying C implementation. Many methods allow you flexibility e.g. sorting methods allow you to specify what to sort on. e.g.
 
 ~~~
 example_dist_list = [{'name': 'Earth', 'num_moons': 1},
