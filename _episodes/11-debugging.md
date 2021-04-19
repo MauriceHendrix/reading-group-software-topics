@@ -100,7 +100,7 @@ and up against a deadline,
 which is one of the reasons late-night (or overnight) coding sessions
 are almost never worthwhile.
 
-Code depending on external things such as data from web pages, or code running in paralel can cause intermittent faults, these are very taugh to fix, in this case try the code on a local version of the data and not in paralel if possible.
+Code depending on external things such as data from web pages, or code running in parallel can cause intermittent faults, these are very tough to fix, in this case try the code on a local version of the data and not in parallel if possible.
 
 ## Make It Fail Fast
 
