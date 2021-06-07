@@ -66,6 +66,47 @@ def square_of_negative_in_list2(lst):
 - Especially avoid nested loops whenever possible, it can be worth going through a list multiple times just to avoid nesting!
 - Sometimes sorting can be worth it if you can void nesting loops that way (best sorting algo is O(N log N).
 
+## Tips for recursive algorithms
+Any recursive algorithm can be written non-recursively (though it's not always straightforward).
+
+Consider for example fibonacci numbers:
+~~~
+def fib(n):
+    assert n >= 0, "Cannot calculate negative numbers"
+    if n < 2:
+        return n
+    return fib(n-1) + fib(n-2)
+~~~
+{: .language-python}
+
+We can speed this up really easily by keeping intermediate results:
+
+### With some memory we can speed this up a lot:
+
+~~~
+fibo_numbers = [0,1]
+def fib2(n):
+    if n < len(fibo_numbers):
+        return fibo_numbers[n]
+    else:
+        fib_num = fib2(n-1) + fib2(n-2)
+        fibo_numbers.append(fib_num)
+        return fib_num
+~~~
+{: .language-python}
+
+### Turning recursive function non-recursive::
+
+~~~
+def fib3(n):
+    fibo_numbers2 = [0,1]
+    if n >= len(fibo_numbers2):
+        for i in range(2, n+1):
+            fibo_numbers2.append(fibo_numbers2[i-1] + fibo_numbers2[i-2])
+    return fibo_numbers2[n]
+~~~
+{: .language-python}
+
 ## Testing software performance
 Let's test these different implemntations. The easiest way is to run them on some (the same) sample data and time & compare.
 
