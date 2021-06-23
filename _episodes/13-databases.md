@@ -49,6 +49,9 @@ prepared statements
 
 **Top tip: There are tools with a user interface for most database systems (e.q. SqlList workbench) that let you do most things. Use them for one off operations and to perfect more complicated queries!**
 
+## Database used for demo
+[ion-species.db](https://github.com/MauriceHendrix/reading-group-software-topics/raw/gh-pages/assets/ion-species.db)
+
 ## Creating tables
 Best done via the tool. You create a table with a name, and fields of a certain type. E.g:
 ~~~
