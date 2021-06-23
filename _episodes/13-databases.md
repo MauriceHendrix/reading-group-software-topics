@@ -33,7 +33,7 @@ Some popular solutions include:
 - MySql (popular open source db, used by weblab)
 - Oracle
 - Microsoft SQL server
-- * SqlLite * (light-weight open source, doesn't require seperate server)
+- **SqlLite (light-weight open source, doesn't require seperate server)**
 
 
 A relational database is based on tables & relations between tables. We'll briefly look at:
