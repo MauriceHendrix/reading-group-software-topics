@@ -190,7 +190,7 @@ WHERE ...;
 {: .language-sql}
 
 
-![SqlLite tutorial](https://www.sqlitetutorial.net/sqlite-python/)
-![DB Browser for SQLite tool](https://sqlitebrowser.org/)
+[SqlLite tutorial](https://www.sqlitetutorial.net/sqlite-python/)
+[DB Browser for SQLite tool](https://sqlitebrowser.org/)
 
 {% include links.md %}
