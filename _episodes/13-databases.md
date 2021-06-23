@@ -95,7 +95,7 @@ with sqlite3.connect('ion-species.db') as con:
     print(data)
 
 ~~~
-{: .language-sql}
+{: .language-python}
 
 ## Retreiving data
 The very basic form for data extraction is:
